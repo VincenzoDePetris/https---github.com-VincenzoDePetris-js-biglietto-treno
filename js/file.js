@@ -9,9 +9,15 @@ const scontoanziani = 40;
 const scontogiovani = 20;
 
 if (età < 19) {
-  alert(costo - (costo / 100) * scontogiovani);
+  alert(
+    "il costo del biglietto è " + (costo - (costo / 100) * scontogiovani) + "€"
+  );
 } else if (età > 65) {
-  alert((costo = costo - (costo / 100) * scontoanziani));
+  alert(
+    "il costo del biglietto è " +
+      (costo = costo - (costo / 100) * scontoanziani) +
+      "€"
+  );
 } else {
-  alert(costo);
+  alert("il costo del biglietto è " + costo + "€");
 }
