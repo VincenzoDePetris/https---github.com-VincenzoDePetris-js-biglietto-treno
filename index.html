@@ -3,16 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
     <main>
-      <section class="content">
-        <input id="km" type="text" placeholder="km" />
-        <input id="anni" type="text" placeholder="età" />
-        <input type="button" id="btn1" value="genera biglietto" />
+      <div>
+        <input id="name-input" type="text" placeholder="nome" />
+        <input id="surname-input" type="text" placeholder="cognome" />
+        <input id="km-input" type="text" placeholder="km" />
+        <input id="age-input" type="text" placeholder="età" />
+
+        <button type="button" id="generate-ticket" value="genera biglietto">
+          Calcola tariffa
+        </button>
         <p id="output"></p>
-      </section>
+      </div>
+      <div id="ticket-section" class="">
+        <p id="ticket-name-element"></p>
+        <p id="ticket-pnr-element"></p>
+        <p id="ticket-coach-element"></p>
+        <p id="ticket-station-element"></p>
+        <p id="ticket-price-element"></p>
+      </div>
     </main>
     <script type="text/javascript" src="./js/file.js"></script>
   </body>
